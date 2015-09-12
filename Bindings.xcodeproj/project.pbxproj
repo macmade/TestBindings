@@ -19,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		05550C831BA254EB007DB97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindowController.xib; sourceTree = "<group>"; };
+		0588A9F21BA4A08400131163 /* Bindings-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bindings-Prefix.pch"; sourceTree = "<group>"; };
 		05B4E7761BA22482008C390C /* ApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationDelegate.h; sourceTree = "<group>"; };
 		05B4E7771BA22482008C390C /* ApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationDelegate.m; sourceTree = "<group>"; };
 		05B4E7781BA22482008C390C /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 		05E7E3A21BA217CB00417593 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0588A9F21BA4A08400131163 /* Bindings-Prefix.pch */,
 				05E7E3A51BA217CB00417593 /* Assets.xcassets */,
 				05E7E3AA1BA217CB00417593 /* Info.plist */,
 				05E7E3A31BA217CB00417593 /* main.m */,
@@ -425,6 +427,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bindings/Bindings-Prefix.pch";
 				INFOPLIST_FILE = Bindings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.Bindings";
@@ -437,6 +441,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bindings/Bindings-Prefix.pch";
 				INFOPLIST_FILE = Bindings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.Bindings";
